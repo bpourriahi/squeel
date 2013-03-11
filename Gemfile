@@ -24,9 +24,9 @@ when /\// # A path
   gem 'activerecord', :path => "#{rails}/activerecord"
 when /^v/ # A tagged version
   git 'git://github.com/rails/rails.git', :tag => rails do
-    gem 'activesupport'
-    gem 'activemodel'
-    gem 'activerecord'
+    gem 'activesupport', '4.0.0.beta1'
+    gem 'activemodel', '4.0.0.beta1'
+    gem 'activerecord', '4.0.0.beta1'
   end
 else
   git 'git://github.com/rails/rails.git', :branch => rails do
